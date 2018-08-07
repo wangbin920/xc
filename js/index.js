@@ -4,13 +4,13 @@ $(function (){
       el: '.swiper-pagination',
     },
   });
-$('#dianji1').focus(function(){
+$('#dianji').focus(function(){
   $('.zhuti').hide();
-  $('.ss').show();  
+  $('.searchpage').show();  
 })
 $('.back').on('click',function () {
   $('.zhuti').show();
-  $('.ss').hide();  
+  $('.searchpage').hide();  
   })
 
 
