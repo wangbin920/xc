@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+body {
+  font-size: 0.33816rem;
+}
+
+.zhuti {
+  display: none;
+  position: relative;
+  background-color: #dddddd;
+}
+.zhuti .ding {
+  position: fixed;
+  z-index: 66;
+  width: 100%;
+  height: 1.08696rem;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.24155rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.zhuti .ding input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 0.72464rem;
+  border: 0.02415rem solid #999;
+  border-radius: 0.12077rem;
+  padding-left: 0.72464rem;
+  box-shadow: -0.02415rem 0.02415rem 0.02415rem #ccc;
+  background: url(../imgs/glass.png) 0.14493rem 0.12077rem/0.43478rem auto no-repeat;
+  background-color: #fff;
+}
+.zhuti .ding a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.12077rem;
+  -webkit-flex-basis: 0.94203rem;
+      -ms-flex-preferred-size: 0.94203rem;
+          flex-basis: 0.94203rem;
+}
+.zhuti .ding a img {
+  width: 0.48309rem;
+}
+.zhuti .ding a span {
+  color: #099fde;
+  font-size: 0.36232rem;
+}
+.zhuti .lunbo {
+  padding: 1.08696rem 0.12077rem 0rem 0.12077rem;
+  background-color: #ddd;
+}
+.zhuti .lunbo img {
+  width: 100%;
+}
+.zhuti .lunbo .swiper-pagination {
+  margin-bottom: -0.24155rem;
+  text-align: right;
+}
+.zhuti .lunbo .swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+  width: 0.36232rem;
+}
+.zhuti .tuijian {
+  background-color: #fff;
+  border-radius: 0.12077rem;
+  margin: 0.12077rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.zhuti .tuijian a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.zhuti .tuijian a img {
+  width: 1.37681rem;
+  height: 1.37681rem;
+}
+.zhuti .tuijian a span {
+  font-size: 0.38647rem;
+  color: #666;
+}
+.zhuti .fenlei {
+  background-color: #fff;
+  border-radius: 0.24155rem;
+  margin: 0rem 0.12077rem;
+}
+.zhuti .fenlei .fen {
+  width: 100%;
+  margin-top: 5px;
+  height: 2.41546rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.zhuti .fenlei .fen .left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-right: 1px solid #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0.50725rem;
+}
+.zhuti .fenlei .fen .left a {
+  color: #fff;
+}
+.zhuti .fenlei .fen .rig {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.zhuti .fenlei .fen .rig a {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.zhuti .fenlei .fen .rig a:nth-child(1),
+.zhuti .fenlei .fen .rig a:nth-child(2) {
+  border-bottom: 1px solid #fff;
+}
+.zhuti .fenlei .fen .rig a:nth-child(1),
+.zhuti .fenlei .fen .rig a:nth-child(3) {
+  border-right: 1px solid #fff;
+}
+.zhuti .fenlei .f1 {
+  background: -webkit-linear-gradient(left, #fa5c54, #fa974e);
+  background: linear-gradient(to right, #fa5c54, #fa974e);
+  border-top-left-radius: 0.24155rem;
+  border-top-right-radius: 0.24155rem;
+}
+.zhuti .fenlei .f1 .left {
+  background: url(../imgs/item1.png) no-repeat center bottom/100% auto;
+}
+@media screen and (min-width: 500px) {
+  .zhuti .fenlei .f1 .left .left {
+    background: url("../imgs/item1.png") center bottom/3.23671rem auto no-repeat;
+  }
+}
+.zhuti .fenlei .f2 {
+  background: -webkit-linear-gradient(left, #4b92ed, #52b9ed);
+  background: linear-gradient(to right, #4b92ed, #52b9ed);
+}
+.zhuti .fenlei .f2 .left {
+  background: url(../imgs/item2.png) no-repeat center bottom/100% auto;
+}
+@media screen and (min-width: 500px) {
+  .zhuti .fenlei .f2 .left .left {
+    background: url("../imgs/item2.png") center bottom/3.23671rem auto no-repeat;
+  }
+}
+.zhuti .fenlei .f3 {
+  background: -webkit-linear-gradient(left, #35c2a6, #69d35b);
+  background: linear-gradient(to right, #35c2a6, #69d35b);
+  border-bottom-left-radius: 0.24155rem;
+  border-bottom-right-radius: 0.24155rem;
+}
+.zhuti .fenlei .f3 .left {
+  background: url(../imgs/item3.png) no-repeat center bottom/100% auto;
+}
+@media screen and (min-width: 500px) {
+  .zhuti .fenlei .f3 .left .left {
+    background: url("../imgs/item3.png") center bottom/3.23671rem auto no-repeat;
+  }
+}
+.zhuti .qianzheng {
+  padding: 0.21739rem 0rem;
+  margin-top: 0.12077rem;
+  height: 2.89855rem;
+  border-radius: 0.24155rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.zhuti .qianzheng a {
+  width: 16.6666666666%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.zhuti .qianzheng a img {
+  width: 0.60386rem;
+  height: 0.60386rem;
+}
+.zhuti .qianzheng a span {
+  color: #666;
+  font-size: 0.33816rem;
+}
+
+.ss .ding {
+  z-index: 66;
+  width: 100%;
+  height: 1.08696rem;
+  background-color: #e6f0f7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.24155rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ss .ding .back {
+  -webkit-flex-basis: 0.72464rem;
+      -ms-flex-preferred-size: 0.72464rem;
+          flex-basis: 0.72464rem;
+  background: url("../imgs/back.png") 0rem 0rem/auto 0.72464rem no-repeat;
+  height: 0.72464rem;
+}
+.ss .ding input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 0.72464rem;
+  border: 0.02415rem solid #999;
+  border-radius: 0.12077rem;
+  padding-left: 0.72464rem;
+  box-shadow: -0.02415rem 0.02415rem 0.02415rem #ccc;
+  background: url(../imgs/glass.png) 0.14493rem 0.12077rem/0.43478rem auto no-repeat;
+  background-color: #fff;
+}
+.ss .ding .shous {
+  color: #666;
+  font-size: 0.36232rem;
+  margin-left: 0.12077rem;
+  -webkit-flex-basis: 0.94203rem;
+      -ms-flex-preferred-size: 0.94203rem;
+          flex-basis: 0.94203rem;
+}
+.ss .jilu {
+  height: 0.72464rem;
+  background-color: #f6f6f6;
+  width: 100%;
+  line-height: 0.72464rem;
+  color: #666;
+  padding-left: 0.24155rem;
+  display: none;
+}
+.ss .jilu li {
+  height: 1.20773rem;
+  line-height: 1.20773rem;
+  padding: 0rem 0.72464rem;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  color: #666;
+}
+.ss .jilu .clear {
+  color: #03a9f4;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */
