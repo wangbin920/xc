@@ -113,27 +113,31 @@
 
 
 
-    <div class="ss">
-        <div class="ding">
-            <a class="back"></a>
-            <input id="dianji" type="text" placeholder="酒店/目的地/景点/航班">
-            <a href="#" class="shous">
-                搜索
-            </a>
+    <div class="searchpage">
+            <div class="header">
+                <a class="back"></a>
+                <input type="text" placeholder="酒店/目的地/景点/航班">
+                <a class="search">搜索</a>
+            </div>
+    
+            <!-- 一开始是隐藏的， 需要先查一下本地是否有搜索记录保存，再决定是否显示 -->
+            <div class="searchhistory"></div>
+    
+            <script id="searchlist" type="text/html">
+                <p class="title">搜索历史</p>
+                <ul class="searchlist">
+                    {{each list}}
+                        <li>{{$value}}</li>
+                    {{/each}}
+    
+                    <!-- {{each list v i}}
+                    <li>{{v}}</li>
+                    {{/each}} -->
+    
+                    <li class="clear">清空搜索历史</li>
+                </ul>
+            </script>
         </div>
-       
-        <div class="jilu">
-                <p>搜索历史</p>
-        </div>
-        <script type="text/html" id="muban">
-            <ul>
-                {{each list}}
-                <li>{{$value}}</li>
-                {{/each}}
-                <li class="clear">清空搜索历史</li>
-            </ul>
-        </script>
-    </div>
 
 
 </body>
